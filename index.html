@@ -58,6 +58,48 @@
                   <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
+            <div class="callback">
+              <p class="action callback">Оставьте свои данные, мы вам перезвоним</p>
+              <form action="#" name="form callback" class="form-callback">
+                <label class="modal-lable">
+                  Имя
+                  <span class="form-field-wrapper">
+                    <input class="modal-input" type="name" name="user-name" required />
+                    <svg class="modal-icon name">
+                      <use href="./images/symbol-defs.svg#icon-footer_body"></use>
+                   </svg>
+                </span>
+                </label>
+                <label class="modal-lable">
+                  Телефон
+                  <span class="form-field-wrapper">
+                    <input class="modal-input" type="tel" name="user-phone" required />
+                    <svg class="modal-icon phone">
+                      <use href="./images/symbol-defs.svg#icon-footer_phone"></use>
+                    </svg>
+                  </span>
+                </label>
+                <label class="modal-lable">
+                  Почта
+                  <span class="form-field-wrapper">
+                    <input class="modal-input" type="email" name="user-mail" required />
+                    <svg class="modal-icon envelope">
+                      <use href="./images/symbol-defs.svg#icon-footer_envelope"></use>
+                    </svg>
+                  </span>
+                </label>
+                <label class="modal-lable">
+                  Комментарий
+                <textarea class="modal-textarea" name="user-comment" rows="9" placeholder="Введите текст"></textarea>
+                </label>
+                <label>
+                  <input type="checkbox" name="user-agree" required />
+                  <span class="checkbox-text">Соглашаюсь с рассылкой принимаю <a class="checkbox-link" href="">Условия дговора</a></span>
+                </label>
+              </form>
+              <button class="callback button" type="submit">Отправить</button>
+            
+            </div>
           </div>
         </div>
       </section>
@@ -375,7 +417,7 @@
             </li>
           </ul>
         </div>
-        <!-- <div class="subscribe">
+        <div class="subscribe">
           <p class="action subsc">Подпишитесь на рассылку</p>
           <form class="form subsc">
             <label class="footer-mail-box">
@@ -388,38 +430,12 @@
               </svg>
             </button>
           </form>
-        </div> -->
+        </div>
       </div>
       </footer>
       
-<!--       
-      <div class="callback">
-        <p class="action callback">Оставьте свои данные, мы вам перезвоним</p>
-        <form name="form callback">
-          <label>
-          Имя
-            <input type="name" name="user-name" required/>
-        </label>
-        <label>
-          Телефон
-          <input type="tel" name="user-phone" required/>
-        </label><label>
-          Почта
-          <input type="email" name="user-mail" required/>
-        </label>
-        <label>
-          Комментарий
-          <textarea name="user-comment" rows="10" placeholder="Введите текст">
-          </textarea>
-        </label>
-        <label>
-           <input type="checkbox" checked name="user-agree" required/>
-           Соглашаюсь с рассылкой принимаю Условия дговора
-        </label>          
-      </form>
-      <button class="callback button" type="submit">Отправить</button> -->
-        
-      </div> -->
+      
+      
       <script src="./js/modal.js"></script>
   </body>
 </html>
